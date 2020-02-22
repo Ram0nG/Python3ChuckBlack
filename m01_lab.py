@@ -9,3 +9,18 @@
 #Yearly Income
 
 #Print the Information for this individual Nicely aligned:
+Name =  "Tolentino Cala"
+Location = "RD"
+Relationship = "Married"
+Spouse = "Single"
+Employer = "SCH"
+JobTitle = "Network Automation"
+Income = 20000
+
+print("Name:", Name)
+print("Location:", Location)
+print("Relationship:", Relationship)
+print("Spouse:", Spouse)
+print("Employer:", Employer)
+print("JobTitle:", JobTitle)
+print("Imcome:", "$" + str(float(Income)))
