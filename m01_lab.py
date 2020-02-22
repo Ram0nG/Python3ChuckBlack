@@ -17,10 +17,11 @@ Employer = "SCH"
 JobTitle = "Network Automation"
 Income = 20000
 
-print("Name:", Name)
-print("Location:", Location)
-print("Relationship:", Relationship)
-print("Spouse:", Spouse)
-print("Employer:", Employer)
-print("JobTitle:", JobTitle)
-print("Imcome:", "$" + str(float(Income)))
+print("Name:",          Name)
+print("Location:",      Location)
+print("Relationship Status:", Relationship)
+print("---Spouse:", Spouse)
+
+print("Employed By:", Employer)
+print("---JobTitle:",       JobTitle)
+print("---Imcome:",  "$" + str(float(Income)))
