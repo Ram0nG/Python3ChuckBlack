@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 
 balance = 1000.00
-name = "Mario Gomez"
+name = "Tolentino Cala"
 account_no = "01123581231"
 
 print("name:", name, "account:", account_no, "balance:", balance)
-print("name:", name, "account:", account_no, "balance:", "$"\ #This (\) is to continue with the code
-+ str(balance))                                               #Instead of having a long line of code  
-print("name:", name, "account:", account_no, "balance:", "$" \
-+ str(float(balance)))
+print("name:", name, "account:", account_no, "balance:", "$" + str(balance))
+print("name:", name, "account:", account_no, "balance:", "$" + str(float(balance)))
 
 print("\n")
 
