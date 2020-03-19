@@ -19,4 +19,4 @@ for charge_info in charge_list:
                                                              float(charge_info[2]),
                                                              balance))
 # This is a list of list, this is no the best way to do code
-# in the next example he will show how to do the best practice.
+# in the next example he will show how to do the best practice..

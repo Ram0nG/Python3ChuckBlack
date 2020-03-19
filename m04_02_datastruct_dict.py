@@ -24,3 +24,4 @@ for charge_info in charges_list:
                                                             charge_info['date'],
                                                             float(charge_info['charge']),
                                                             balance))
+# .
