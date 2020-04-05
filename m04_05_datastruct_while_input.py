@@ -57,9 +57,9 @@ while True:
     print("---------------         ---------------      ----------     --------")
     for charge_info in charges_dict[vendor_to_find]:
 
-        print("{0:24}   {1:10}  {2:8,.2f}    {3:8,.2f}".format(charge_info['vendor'],
-                                                            charge_info['date'],
-                                                            float(charge_info['charge'])))
+        print("{0:24}   {1:10}  {2:8,.2f}".format(charge_info['vendor'],
+                                                  charge_info['date'],
+                                            float(charge_info['charge'])))
 
 print('\n\n--- Exiting Search, Program complete')
 exit()
