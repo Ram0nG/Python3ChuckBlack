@@ -22,7 +22,7 @@ for charge_string in open ("m00_charges-file"):
     if charge_info['vendor'] not in charges_dict:
         charges_dict[charge_info['vendor']] = list()
 
-    charges_dict[charge_info['vendor']] .apend(charge_info)
+    charges_dict[charge_info['vendor']] .append(charge_info)
 
 charges_sorted_by_data = sorted(charges_list, key=itemgetter('date'))
 
@@ -35,9 +35,9 @@ for vendor, charge_info_list in charges_dict.items():
     for charge_info in charge_info_list:
 
         balance = balance - float(charge_info['charge'])
-        print("{0:24}   {1:10}  {2:8,.f}    {3:8,.f}".format(charge_info['vendor'],
+        print("{0:24}   {1:10}  {2:8,.2f}    {3:8,.2f}".format(charge_info['vendor'],
                                                             charge_info['date'],
-                                                            float(charge_info['charge']
+                                                  float(charge_info['charge']),
                                                             balance))
 
     print("--")
@@ -49,7 +49,7 @@ while True:
         break
 
     if vendor_to_find not in charges_dict:
-        print('vendor {} not found' .format(vnedor_to_find))
+        print('vendor {} not found' .format(vendor_to_find))
         continue
 
     print("\n")
@@ -57,9 +57,9 @@ while True:
     print("---------------         ---------------      ----------     --------")
     for charge_info in charges_dict[vendor_to_find]:
 
-        print("{0:24}   {1:10}  {2:8,.f}    {3:8,.f}".format(charge_info['vendor'],
+        print("{0:24}   {1:10}  {2:8,.2f}    {3:8,.2f}".format(charge_info['vendor'],
                                                             charge_info['date'],
-                                                            float(charge_info['charge']))
+                                                            float(charge_info['charge'])))
 
 print('\n\n--- Exiting Search, Program complete')
 exit()
